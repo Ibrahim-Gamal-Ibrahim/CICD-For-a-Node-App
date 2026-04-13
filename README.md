@@ -135,9 +135,9 @@ ansible-playbook -i hosts playbook.yml
 
 📸 **Screenshot Placeholder:**
 
-```
+
 ![Ansible Playbook Result](Ansible_results.jpg)
-```
+
 
 
 # 🔄 Part 4: CI/CD Pipeline
@@ -147,7 +147,6 @@ ansible-playbook -i hosts playbook.yml
 ```
 .github/workflows/cicd.yml
 ```
-
 ## ⚙️ Workflow Steps
 
 1. Checkout code
@@ -234,19 +233,14 @@ After pushing to `main` branch:
 http://SERVER_IP:3030
 http://SERVER_IP:3030/secret
 ```
+## CICD Result
+![github Actions Result](cicd_test.jpg)
+## Final Test
 
 📸 **Screenshot Placeholder:**
 
-```
-![CICD Result](cicd_test.jpg)
-```
-# Final Test
+![Appication on the EC2](running_app.jpg)
 
-📸 **Screenshot Placeholder:**
-
-```
-![Appication on the EC2](cicd_test.jpg)
-```
 
 # 🧠 Lessons Learned
 
