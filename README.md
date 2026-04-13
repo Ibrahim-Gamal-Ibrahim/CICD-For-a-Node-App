@@ -58,26 +58,6 @@ USERNAME=admin
 PASSWORD=1234
 ```
 
-## ▶️ Run Locally
-
-```
-npm install
-node app.js
-```
-
-### ✅ Output
-
-* [http://localhost:3000](http://localhost:3030) → Hello, world!
-* [http://localhost:3000/secret](http://localhost:3030/secret) → Requires authentication
-
-📸 **Screenshot Placeholder:**
-
-```
-Add screenshot of browser showing Hello World
-```
-
----
-
 # 🐳 Part 2: Dockerization
 
 ## 📄 Dockerfile
@@ -111,21 +91,6 @@ CMD ["node", "app.js"]
 Dockerfile
 ```
 
-## ▶️ Build 
-
-```
-docker build -t node-app .
-docker run -p 3000:3000 --env-file .env node-app
-```
-
-📸 **Screenshot Placeholder:**
-
-```
-Add screenshot of docker build success
-Add screenshot of running container
-```
-
----
 
 # ☁️ Part 3: Remote Server Setup
 
@@ -171,16 +136,7 @@ ansible-playbook -i hosts playbook.yml
 📸 **Screenshot Placeholder:**
 
 ```
-Add screenshot of successful Ansible playbook run (TASK [docker : install docker] ... ok/changed)
-```
-
----
-
-
-📸 **Screenshot Placeholder:**
-
-```
-Add screenshot showing Docker installed successfully on EC2
+![Ansible Playbook Result](Ansible_results.jpg)
 ```
 
 
@@ -282,11 +238,15 @@ http://SERVER_IP:3030/secret
 📸 **Screenshot Placeholder:**
 
 ```
-Add screenshot of GitHub Actions success
-Add screenshot of running app on server
+![CICD Result](cicd_test.jpg)
 ```
+# Final Test
 
----
+📸 **Screenshot Placeholder:**
+
+```
+![Appication on the EC2](cicd_test.jpg)
+```
 
 # 🧠 Lessons Learned
 
